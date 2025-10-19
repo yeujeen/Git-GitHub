@@ -1,13 +1,19 @@
-git log
--> 되돌아갈 시점의 커밋 해시 복사 (앞 6글자)
-:q로 빠져나가기
-
--> git reset --hard (돌아갈 커밋 해시)
-
 Git Reset: 과거로 돌아가기 (이력 변경 O)
 git reset은 현재 브랜치의 HEAD 포인터를 지정한 과거의 특정 커밋으로 강제로 이동
 과거를 바꾸는 것
 
+git log
+-> 되돌아갈 시점의 커밋 해시 복사
+:q로 빠져나가기
+
+-> git reset --hard (돌아갈 커밋 해시)
+
+
+
+
 Git Revert: 실수를 만회하기 (이력 변경 X)
 git revert는 특정 커밋의 변경 사항을 취소하는 새로운 커밋을 생성
 과거의 실수를 만회하는 새로운 기록을 남기는 것
+
+git revert (되돌릴 커밋 해시)
+git revert --no-commit (되돌릴  커밋 해시)
